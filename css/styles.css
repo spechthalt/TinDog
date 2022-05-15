@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #ff4c68;
+  --secondary-color: #ef8172;
+}
+
 body {
   font-family: "Montserrat";
 }
@@ -8,18 +13,21 @@ h2 {
   line-height: 1.5;
 }
 
+.container-fluid {
+  padding: 7% 15%;
+}
+
 section#title {
-  background-color: #ff4c68;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
-.container-fluid {
+section#title .container-fluid {
   padding: 3% 15% 7%;
 }
 
 section#title h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 3.5rem;
   line-height: 1.5;
 }
@@ -42,7 +50,6 @@ nav.navbar {
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: "Montserrat";
 }
 
 /* Download Buttons */
@@ -53,23 +60,18 @@ nav.navbar {
 
 /* Title Image */
 
-
-
 .title-image {
   right: 24%;
- width: 22%;
+  width: 22%;
   transform: rotate(25deg);
   position: absolute;
-
 }
 
 /* Features */
 
 section#features {
   background-color: #fff;
-  padding: 7% 15%;
   position: relative;
-  
 }
 
 section#features .feature-box {
@@ -78,13 +80,14 @@ section#features .feature-box {
 }
 
 section#features i {
-  color: #ef8172;
+  color: var(--secondary-color);
   font-size: 3rem;
   padding-bottom: 1rem;
+  transition: all 150ms ease-in-out;
 }
 
 section#features i:hover {
-  color: #ff4c68;
+  color: var(--primary-color);
 }
 
 section#features h3 {
@@ -99,15 +102,9 @@ section#features p {
 /* Testimonials and press */
 
 section#testimonials {
-  background-color: #ef8172;
+  background-color: var(--secondary-color);
   color: #fff;
-  font-family: "Montserrat";
-
   text-align: center;
-}
-
-section#testimonials .testimonial-carousel-content {
-  padding: 7% 15%;
 }
 
 section#testimonials .testimonial-image {
@@ -117,7 +114,7 @@ section#testimonials .testimonial-image {
 }
 
 section#press {
-  background-color: #ef8172;
+  background-color: var(--secondary-color);
   text-align: center;
 }
 
@@ -138,3 +135,30 @@ section#pricing .card {
 
 section#pricing .price-card {
   padding: 3%;
+}
+
+/* Call To Action */
+
+section#cta {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+section#cta h3 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+/* Footer */
+
+footer#footer {
+  background-color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+footer .footer-icon {
+  padding: 0 10px;
+}
